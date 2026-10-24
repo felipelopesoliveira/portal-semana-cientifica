@@ -1563,6 +1563,12 @@ body.speakers-page::after {
     height: 120px;
   }
 
+  .sponsor-card .cta{
+    align-self: center;
+    width: fit-content;
+    max-width: 100%;
+  }
+
   /* SPEAKERS */
   .speaker-photo img {
     width: 90px;
@@ -1648,6 +1654,13 @@ body.speakers-page::after {
   /* SPEAKERS */
   .speaker-card {
     padding: 1rem;
+  }
+
+  .sponsor-card .cta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   /* AWARDS */
