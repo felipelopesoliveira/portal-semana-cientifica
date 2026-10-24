@@ -1441,6 +1441,33 @@ body.speakers-page::after {
    Mobile First até Desktop
 =============================================================== */
 
+/* Fix para funcionar qualquer tamanho desktop */
+@media (min-width: 993px) and (max-width: 1400px) {
+  nav {
+    gap: 1rem;
+  }
+
+  .nav-links {
+    width: auto;
+    flex: 1;
+    min-width: 0;
+    justify-content: space-between;
+    gap: .25rem;
+    margin-right: 0;
+  }
+
+  .nav-links li {
+    font-size: clamp(.75rem, .9vw, 1rem);
+    letter-spacing: 1px;
+  }
+
+  .nav-links a {
+    padding: .5rem .35rem;
+    white-space: nowrap;
+  }
+}
+
+
 /* ------- Telas abaixo de 992px (tablets) ------- */
 @media (max-width: 992px) {
 
