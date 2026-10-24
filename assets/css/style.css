@@ -334,7 +334,7 @@ nav{
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 3rem;
   align-items: center;
 }
@@ -375,10 +375,10 @@ nav{
 /* Imagens dos professores */
 .about_professors {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
   flex-wrap: nowrap;
   justify-content: center;
-  gap: clamp(.75rem, 1.5vw, 1.25rem);
+  gap: 1.25rem;
   flex: 2;
   min-width: 0px;
 }
@@ -421,7 +421,7 @@ nav{
 }
 
 .about__coordinators {
-    grid-column: 2 / 3;
+    grid-column: 1 / -1;
     text-align: right;  /* ou center */
 }
 
