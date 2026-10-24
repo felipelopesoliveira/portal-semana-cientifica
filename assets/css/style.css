@@ -334,7 +334,7 @@ nav{
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
   gap: 3rem;
   align-items: center;
 }
@@ -374,12 +374,13 @@ nav{
 
 /* Imagens dos professores */
 .about_professors {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
   flex-wrap: nowrap;
   justify-content: center;
-  gap: 20px;
+  gap: clamp(.75rem, 1.5vw, 1.25rem);
   flex: 2;
-  min-width: 300px;
+  min-width: 0px;
 }
 
 .professor__card {
@@ -389,9 +390,9 @@ nav{
     text-align: center;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    width: calc(33.333% - 10px);
+    width: auto;
     box-sizing: border-box;
-    min-width: 180px;
+    min-width: 0px;
 }
 
 .professor__card img {
@@ -1599,6 +1600,7 @@ body.speakers-page::after {
   }
 
   .presenter-card {
+    flex-basis: 100%;
     width: 100%;
   }
 
