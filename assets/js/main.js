@@ -84,10 +84,10 @@ function setupCarousel() {
  */
 document.addEventListener("DOMContentLoaded", function() {
     // Carrega o header e, DEPOIS, executa setupMobileMenu
-    loadComponent('/partials/header.html', 'header-placeholder', setupMobileMenu);
+    loadComponent('partials/header.html', 'header-placeholder', setupMobileMenu);
     
     // Carrega o footer (sem callback)
-    loadComponent('/partials/footer.html', 'footer-placeholder');
+    loadComponent('partials/footer.html', 'footer-placeholder');
 
     // Configura o carrossel (ele já está na página, não precisa esperar)
     setupCarousel();
